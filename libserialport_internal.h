@@ -38,7 +38,6 @@
 
 #ifdef LIBSERIALPORT_ATBUILD
 /* If building with autoconf, include the generated config.h. */
-#include <config.h>
 #endif
 
 #ifdef LIBSERIALPORT_MSBUILD

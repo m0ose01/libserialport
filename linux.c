@@ -18,7 +18,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#ifndef USING_CMAKE
 #include <config.h>
+#endif
 #include "libserialport.h"
 #include "libserialport_internal.h"
 
