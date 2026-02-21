@@ -26,8 +26,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 )
 
 if(LINUX)
-	message(FATAL_ERROR "WIN32 not yet supported.")
-
 	target_sources(${PROJECT_NAME} PRIVATE
 		"linux.c"
 		"linux_termios.c"

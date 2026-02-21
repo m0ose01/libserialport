@@ -33,7 +33,9 @@
  * TCSETX/TCGETX ioctls used with struct termiox, others do not.
  */
 
+#ifndef USING_CMAKE
 #include <config.h>
+#endif
 #include <stdlib.h>
 #include <linux/termios.h>
 #include "linux_termios.h"
