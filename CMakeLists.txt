@@ -61,7 +61,4 @@ if(WIN32)
 	target_link_libraries(libserialport INTERFACE setupapi)
 endif(WIN32)
 
-add_executable(list_ports examples/list_ports.c)
-
-target_link_libraries(list_ports libserialport)
-
+add_subdirectory(examples)
