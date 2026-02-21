@@ -281,12 +281,11 @@ extern "C" {
 /** @cond */
 #ifdef _MSC_VER
 /* Microsoft Visual C/C++ compiler in use */
+#define SP_API
 #ifdef LIBSERIALPORT_MSBUILD
 /* Building the library - need to export DLL symbols */
-#define SP_API __declspec(dllexport)
 #else
 /* Using the library - need to import DLL symbols */
-#define SP_API __declspec(dllimport)
 #endif
 #else
 /* Some other compiler in use */
