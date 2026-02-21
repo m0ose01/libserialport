@@ -21,6 +21,10 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
 	USING_CMAKE
 )
 
+target_include_directories(${PROJECT_NAME} PUBLIC
+	${CMAKE_CURRENT_SOURCE_DIR}
+)
+
 if(LINUX)
 	message(FATAL_ERROR "WIN32 not yet supported.")
 
@@ -61,4 +65,3 @@ add_executable(list_ports examples/list_ports.c)
 
 target_link_libraries(list_ports libserialport)
 
-target_include_directories(list_ports PRIVATE ".")
