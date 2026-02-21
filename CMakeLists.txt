@@ -17,7 +17,7 @@ target_sources(${PROJECT_NAME} PRIVATE
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE
-	SP_PRIV="do{}while(0)"
+	SP_PRIV=
 	USING_CMAKE
 )
 
