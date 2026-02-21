@@ -46,6 +46,11 @@ endif(APPLE)
 
 if(WIN32)
 
-	message(FATAL_ERROR "WIN32 not yet supported.")
+	target_sources(${PROJECT_NAME} PRIVATE
+		"windows.c"
+	)
 
+	target_compile_definitions(${PROJECT_NAME} PRIVATE
+		LIBSERIALPORT_MSBUILD
+	)
 endif(WIN32)
